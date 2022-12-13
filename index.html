@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script type="text/javascript">
+        alert("LLENE FORMULARIO");
+    function validar() {
+        var ok = true;
+
+         if (document.getElementById("nombre").value == "" || document.getElementById("apellido").value == "" || document.getElementById("correo").value == "" || document.getElementById("telefono").value == "" || document.getElementById("password").value == ""|| document.getElementById("msg").value =="" ) {
+            alert("Introduzca todos los datos");
+                ok = false;
+        }
+            return ok;
+        }
+    </script>
+</head>
+<body>
+
+    <form action="#" method="post" onsubmit="return validar();">
+        <h3 id="inicio">FORMULARIO</h3>
+        
+        <label for="nombre">NOMBRE y APELLIDO:</label>
+        <input type="text"  id="nombre">
+
+        <label for="correo">CORREO:</label>
+        <input type="email" id="correo">
+
+        <label for="telefono">TELEFONO:</label>
+        <input type="text"maxlength="9" id="telefono" >
+
+        <label for="password">INGRESE CONTRSEÑA:</label>
+        <input type="password" id="password" >
+
+        <label for="fecha">FECHA DE NACIMIENTO:</label>
+        <input name="fecha" type="date" id="fecha"><br>
+
+        <input type="radio" name="elegir" class="radio" value="hombre">HOMBRE <br>
+        <input type="radio" name="elegir" class="radio" value="mujer">MUJER 
+        
+        <label id="mensaje" for="msg">MENSAJE:</label>
+        <textarea id="msg" name="user_message" cols="50" rows="10" placeholder="escriba su mensaje"></textarea>
+
+        <input type="submit" value="ENVIAR" id="enviar">
+    </form>
+</body>
+</html>
