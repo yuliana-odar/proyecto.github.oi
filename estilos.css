@@ -1,0 +1,57 @@
+form{
+    margin: auto;
+    width: 500px;
+    border: 1px solid black;
+    padding: 50px;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-family: arial;
+}
+#inicio{
+    color: brown;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    font-size: 30px;
+}
+label{
+    
+    font-weight: bold;
+    color: gray;
+    display: inline-block;
+    width: 90%;
+    margin-bottom: 3px;
+}
+#mensaje{
+    margin-top: 10px;
+}
+input{
+    font-family: Arial;
+    font-weight: bold;
+    width: 250px;
+    margin-bottom: 10px;
+}
+.radio{
+    width: 10px;
+}
+textarea{
+    font-family: Arial;
+    font-weight: bold;
+
+}
+#enviar{
+    border: none;
+    margin-top: 3px;
+    display: flex;
+    justify-content: center;
+    background-color: brown;
+    color: white;
+    padding: 5px;
+    width: 20%;
+}
+#enviar:hover{
+    background-color: gray;
+    color: brown;
+    font-weight: bold;
+}
